@@ -1,0 +1,7 @@
+The tax on car 1 is: 600 euro
+The tax on car 2 is: 400 euro
+The tax on car 3 is: 200 euro
+The tax on car 4 is: 150 euro
+The tax on car 5 is: 600 euro
+The tax on car 6 is: 200 euro
+The tax on car 7 is: 200 euro
