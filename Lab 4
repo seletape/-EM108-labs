@@ -1,0 +1,156 @@
+
+
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+   printf("Hello! Welcome to my Gardening store!");
+
+   /* declarations */
+
+   int y, z, x ;
+   float liters_required, area_required ;
+  /* input data */
+    printf("Welcome to Average computation!");
+    printf("\nEnter the value of length : ");
+    scanf("%d", &y);
+
+    printf("\nLength is %d metres ",y);
+    printf("\nEnter the number of width : ");
+    scanf("%d", &z);
+    printf("\n Width is %d metres  ",z);
+
+    printf("\nEnter the required amuount of weed killer in liters ? : ");
+    scanf("%d", &x);
+    printf("\n Required amount is %d litres/square feet  ",x);
+
+ 	/* compute result */
+ 	area_required=((y*3.28)*(z*3.28));
+
+ 	printf("\nHere is the area of your Garden! %f in square feet  ",area_required);
+    liters_required=area_required*x;
+    printf("\n Liters required are %f litres/square feet", liters_required);
+	  printf("\nThank you for using my code! Goodbye!  ");
+
+   return(EXIT_SUCCESS);
+
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+/* declarations */
+float average, num1, num2, num3, total, product;
+/* input data */
+printf("Welcome to Average computation!");
+printf("\nEnter first number: ");
+scanf("%f", &num1);
+printf("\nEnter second number: ");
+scanf("%f", &num2);
+printf("\nEnter third number: ");
+scanf("%f", &num3);
+/* compute result */
+total = (num1 + num2 + num3) ;
+printf("\nTotal = %f", total) ;
+
+product = (num1*num2*num3) ;
+printf("\nProduct is %f", product) ;
+
+average = (num1 + num2 + num3) / 3;
+/* print result */
+printf("\nThe average is: %f\n", average);
+
+printf("Testing number maximum/minimum!\n");
+
+    if((num1>=num2) && (num1>=num3)){
+    printf("Max number is %f", num1);
+
+}
+
+    else if ((num2>=num1) && (num2>=num3)){
+       printf("Max number is %f", num2);
+}
+
+
+
+     else if ((num3>=num1) && (num3>=num2)){
+       printf("Max number is %f", num3);
+}
+
+
+    if((num1<=num2) && (num1<=num3)){
+    printf("Min number is %f", num1);
+
+}
+
+    else if ((num2<=num1) && (num2<=num3)){
+       printf("Min number is %f", num2);
+
+}
+     else if ((num3<=num1) && (num3<=num2)){
+       printf("Min number is %f", num3);
+   }
+
+
+
+
+printf("Goodbye from my code!") ;
+return(EXIT_SUCCESS);
+}
+/* stop */
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+/* declarations */
+float sum, average, product;
+int i, n;
+float nums[20];
+/* input data */
+printf("Welcome to Average computation!");
+printf("\nEnter the number of numbers (n < 20): ");
+scanf("%d", &n);
+/* reading loop */
+for (i = 0; i < n; i++)
+{
+/* read num[i] */
+printf("\nEnter the %d-th number: ",i);
+scanf("%f", &nums[i]);
+}
+/* initialize */
+sum = 0;
+product=1;
+/* processing loop */
+for (i = 0; i < n; i++)
+{
+/* add num[i] */
+sum += nums[i];
+
+/* product num[i] */
+product=product*nums[i];
+}
+/* copute result */
+average = sum / n ;
+/* print result */
+printf("\nThe average is: %f\n", average);
+printf("\nThe sum is: %f\n", sum);
+printf("\nThe product is: %f\n", product);
+/* stop */
+return(EXIT_SUCCESS);
+}
